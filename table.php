@@ -59,5 +59,3 @@
    </tr>
  <!-- </table ini untuk menutup tabel anak -->
    </table>
-</tr>
-</table>
