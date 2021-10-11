@@ -1,63 +1,45 @@
 <html>
 <head>
-<title>Atribut dari tag tabel</title>
+<title>Atribut tag Form dan Input</title>
 </head>
-<body>
-<p><b>Membuat Tabel</b></p>
-<table border="1" bordercolor="black" bgcolor="white" cellpadding="8"
-cellspacing="0" width="100%">
-<tr> <!-- <tr> artinya membuat sebuah baris -->
- <td>Ini kolom 1 pada baris 1</td> <!-- <td> = membuat sebuah kolom. -->
- <td>Ini kolom 2 pada baris 1</td> <!-- </td> mengakhiri sebuah kolom -->
-</tr> <!-- mengakhiri sebuah baris -->
-<tr>
- <td>Ini kolom 1 pada baris 2</td>
- <td>Ini kolom 2 pada baris 2</td>
-</tr>
-</table>
-<p><b>Contoh 2: Membuat Tabel</b></p>
-<table border="1" bordercolor="black" bgcolor="white" cellpadding="8"
-cellspacing="0" width="100%">
-<tr bgcolor="yellow">
- <td align="center">Ini kolom 1 pada baris 1</td>
- <td align="right">Ini kolom 2 pada baris 1</td>
-</tr>
-<tr>
- <td align="center" bgcolor="red"><font color="white">Ini kolom 1 pada baris
-2</font></td>
- <td align="right">Ini kolom 2 pada baris 2</td>
-</tr>
-</table>
-<p><b><font color="blue">Tabel sebagai bingkai dari paragraf</font></b></p>
-<table border="1" style="border-collapse: collapse" cellpadding="8"
-bgcolor="white" width="100%" bordercolor="black">
-<tr>
- <td><p>Tabel memiliki peranan sangat penting dalam tampilan sebuah situs web.
-Tanpa tabel desainer akan mengalamai kesulitan dalam mendesain sebuah halaman
-web.</p>
- <p>Kalau anda perhatikan website yan memiliki tampilan yang tersusun rapi.
-Sebenarnya itu adalah tabel hanya saja atribut <font
-color="red"><b>border="0"</b></font> sehingga tabel seakan tidak
-ada(transparan).</p>
- <p>Situs rahasia-webmaster.com banyak menggunakan tabel sebagai bingkai
-paragraf. Perlu diingat tag-tag pada html dapat mengandung unsur yang sama.
-Contohnya di dalam sebuah tabel terdapat tabel lagi. Di bawah ini adalah tabel
-yang berada di dalam tabel utama</p>
- <p align="center">
- <!-- tag <table> untuk tabel anak -->
- <table border="1" style="border-collapse: collapse" bgcolor="white"
-bordercolor="black" cellpadding="8" width="80%">
- <tr bgcolor="yellow">
- <td><b>Nama Barang</b></td>
- <td><b>Harga Barang</b></td>
- </tr>
- <tr>
- <td>Monitor</td><td>Rp. 500.000,-</td>
- </tr>
- <tr>
- <td>CDRW</td><td>Rp. 245.000,0</td>
- </tr>
- <!-- </table ini untuk menutup tabel anak -->
- </table>
-</tr>
-</table>
+<body><font face="verdana" size="2">
+<form action="coba.php" method="post">
+<p><b>Tag input dengan atribut type="text"</b><br>
+<input type="text" name="teks_ku" size="16" maxlength="20"><br>
+Ini textbox dengan nama <i>teks_ku</i> ukuran <i>16 chr</i> dan maksimal karakrer
+yang dapat ditampung <i>20 chr(character)</i>.</p>
+<p><b>Tag input dengan atribut type="password"</b><br>
+<input type="password" name="password_ku" size="16" maxlength="20"<br>
+Ini passwordbox dengan nama <i>password_ku</i> ukuran <i>16 chr</i> dan maksimal
+karakrer yang dapat ditampung <i>20 chr(character)</i>.</p>
+<p><b>Tag input dengan atribut type="radio"</b><br>
+<input type="radio" name="radio_ku" value="isi_1">Radio 1 --> nama
+<i>radio_ku</i> isi/value <i>isi_1</i><br>
+<input type="radio" name="radio_ku" value="isi_2">Radio 2 --> nama
+<i>radio_ku</i> isi/value <i>isi_2</i><br>
+<b>Jika nama radio tidak sama maka tidak dianggap satu pilihan. Untuk
+membuktikannya silahkan ganti salah satu nama dari radio diatas untuk mengetahui
+perbedannya.</b></p>
+<p><b>Tag input dengan atribut type="checkbox"</b><br>
+<input type="checkbox" name="checkbox_ku_1" value="isi_1">Checkbox 1 --> nama
+<i>checkbox_ku_1</i> isi/value <i>isi_1</i><br>
+<input type="checkbox" name="checkbox_ku_2" value="isi_2">Checkbox 2 --> nama
+<i>checkbox_ku_2</i> isi/value <i>isi_2</i><p>
+<p><b>Tag input dengan atribut type="submit"</b><br>
+<input type="submit" value="Tombol Submit"><br>
+Tombol ini berguna untuk mem-post(mengirimkan variabel dan isi variabel yang ada
+pada form ke file tujuan (action="file_tujuan"))</p>
+<p><b>Tag input dengan atribut type="reset"</b><br>
+<input type="reset" value="Bersihkan"><br>
+Tombol ini berguna untuk membersihkan seluruh tulisan yang ada pada seluruh isian
+form. Coba isikan semua textbox dan radio lalu tekan tombol ini.</p>
+<p><b>Tag input dengan atribut type="hidden"</b><br>
+<input type="hidden" value="data_ku" name="data">
+Tipe ini berguna jika si webmaster menginkan variabel yang sifatnya sudah
+didefinisikan. Dan tidak menampilkan output apapun.</p>
+<p><b>Tag input dengan propeti type="image"</b><br>
+<input type="image" src="letak_file_gambar_anda" height="98" width="98"><br>
+Image memiliki fungsi yang sama dengan type submit</p>
+</form></font>
+</body>
+</html> 
